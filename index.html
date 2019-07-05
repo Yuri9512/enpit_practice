@@ -1,4 +1,549 @@
-<!DOCTYPE html>
+Last login: Sun Jun 16 17:27:47 on console
+YURI-no-MacBook-Air:~ yeisaki$ git
+usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+
+These are common Git commands used in various situations:
+
+start a working area (see also: git help tutorial)
+   clone      Clone a repository into a new directory
+   init       Create an empty Git repository or reinitialize an existing one
+
+work on the current change (see also: git help everyday)
+   add        Add file contents to the index
+   mv         Move or rename a file, a directory, or a symlink
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+
+examine the history and state (see also: git help revisions)
+   bisect     Use binary search to find the commit that introduced a bug
+   grep       Print lines matching a pattern
+   log        Show commit logs
+   show       Show various types of objects
+   status     Show the working tree status
+
+grow, mark and tweak your common history
+   branch     List, create, or delete branches
+   checkout   Switch branches or restore working tree files
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   merge      Join two or more development histories together
+   rebase     Reapply commits on top of another base tip
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+collaborate (see also: git help workflows)
+   fetch      Download objects and refs from another repository
+   pull       Fetch from and integrate with another repository or a local branch
+   push       Update remote refs along with associated objects
+
+'git help -a' and 'git help -g' list available subcommands and some
+concept guides. See 'git help <command>' or 'git help <concept>'
+to read about a specific subcommand or concept.
+YURI-no-MacBook-Air:~ yeisaki$ ls
+Desktop				matlab_crash_dump.12967-1
+Documents			matlab_crash_dump.20544-1
+Downloads			matlab_crash_dump.20617-1
+Library				matlab_crash_dump.41670-1
+Movies				matlab_crash_dump.6465-1
+Music				matlab_crash_dump.678-1
+Pictures			matlab_crash_dump.8421-1
+Public				matlab_crash_dump.8468-1
+carinfo.csv			matlab_crash_dump.8569-1
+java_error_in_studio_19906.log	matlab_crash_dump.8596-1
+matlab_crash_dump.10653-1	matlab_crash_dump.8623-1
+matlab_crash_dump.10704-1	matlab_crash_dump.8759-1
+matlab_crash_dump.11640-1	template_Scrartcl.tex
+matlab_crash_dump.11705-1
+YURI-no-MacBook-Air:~ yeisaki$ cd Downloads
+YURI-no-MacBook-Air:Downloads yeisaki$ ls
+0-2.docx
+0-3.docx
+0.docx
+00_20180410.pdf
+01BF280.pdf
+01BG097.pdf
+01CH746 サービスとデータプライバシ.pdf
+01CM428宇宙開発工学特論掲示.pdf
+01ZZ101開講せず.pdf
+01ZZ616 パフォーマンス＆アーツ2018.pdf
+01_20180410.pdf
+01_syutyouirai_ken_syoudakusyo_CNS-PF-2.doc
+01_syutyouirai_ken_syoudakusyo_CNS-PF.doc
+02_dc_besshi.docx
+05_datahandling_handout-2.pdf
+0604kamo01_2camera1.MTS
+0604kamo01_2camera2.MTS
+0604kamo01camera1.MTS
+0604kamo01camera1.MTS.ffindex
+0604kamo01camera2.MTS
+0604kamo01camera2.MTS.ffindex
+07_kojima.pdf
+082420add.pdf
+09_36-1_若手の会-初校.pdf
+1010_yeisaki_finalversion.pdf
+12V-DC-Brushless-Water-Pump-Ultra-quiet-3M-240L-H-Brushless-Submersible-Water-Pump-mini-electric.jpg_640x640.jpg
+142625136781275377179.gif
+1435.png
+14airport02.jpg
+170616_yeisaki.pptx
+170922_yeisaki.pptx
+171019_B4mid_yeisaki.pptx
+171212_yeisaki.pptx
+180510_yeisaki.pptx
+181003_社会資本整備と都市行政（越智）H30 .pdf
+181107 観光立国を念頭においた美しい国土づくりの課題  .pdf
+181219HITACHIキャリアセミナー.pdf
+189555ad5584da0ef6.pdf
+200927244-22-0-21.pdf
+20161206000444.jpg
+20170512_ihikosaka.pptx
+20170928_kueki.pdf
+20171107_ykato.pptx
+20171128_ykato.pptx
+20180131_ahirasawa.pptx
+20180517_rkaneko.pptx
+20180524_ihikosaka.pptx
+20180607_nakamatsu.pdf
+20180621_stakita.pptx
+20180621_tishimaru.pptx
+20180628_tmizui.pdf
+20180628_tmizui.pptx
+20180719_kueki.pdf
+20180921_rkaneko.pptx
+20180928_tishimaru.pdf
+20180928_ynaoi.pptx
+20181005_rkaneko.pdf
+20181012_stakita.pdf
+20181012_tishimaru.pptx
+20181012_ynaoi.pptx
+20181026_ahirasawa.pdf
+20181102_ihikosaka.pptx
+20181109_mhori.pptx
+20181109_tishimaru.pdf
+20181130_stakita.pdf
+20181130_ynaoi.pptx
+20181207_kueki.pdf
+20181207_tishimaru.pptx
+20181214_ihikosaka.pptx
+20181214_nakamatsu.pptx
+20181221_stakita.pdf
+201820623.pdf
+2018Sep-振込先等登録依頼書.xls
+2018年度シリコンバレーインターンシップ募集リリース.pdf
+20190130_ynaoi.pdf
+20190205_stakita.pptx
+20190205_tishimaru.pdf
+20190212002332.jpg
+2019022canon-poster.pdf
+2020ProfileSheet.doc
+2414.pdf
+24889760-夏の花とのシームレスな壁紙水彩画.jpg
+3-TAreport.xls
+310101.xlsx
+3260.full.pdf
+41-Rn8eheCL.jpg
+4632688160_3a638ed558.jpg
+5m6h6rks_s1820623.pdf
+5p1034zazen
+6275c9ffc8636af1b8fadd12f697b1a3_t.jpeg
+7.pdf
+7.（別紙2）勤務状況確認書.xls
+8.pdf
+?????????????_????(????)_7 ????.docx
+ACO-revised.ppt
+AI-10.pptx
+Adobe Acrobat Reader DC Installer
+AdobeFlashPlayer_32_ast_install.dmg
+AdobeReader_dc_en_a_install.dmg
+Android_201820623.pdf
+Appendix D.pdf
+BCBReport_201820623.pdf
+BWK_1696PS.png
+CGMRES-master
+CHK-180121_yeisaki.pdf
+CHK-Kawabe_0828-JSCPB180824.docx
+CHK-ieice_abstruct_yeisaki_ver2.docx
+CHK-ieice_resume_yeisaki_ver2.pdf
+CHK-yeisaki_1004.pdf
+CHK-若手の会コーナー原稿_ver2_yeisaki.docx
+CHK_0109-Yeisaki-graduation_thesis.pdf
+Calligraphy-master
+Chapter01.pdf
+Chp1-2.pdf
+CourseIntro.pdf
+CoverLetter.docx
+CoverLetter.pdf
+DA06862.pdf
+DA07.pdf
+DA08-data
+DA09_program
+DA09_program-2
+DA10-data
+DataAnalysisReport1.pdf
+DoctoralThesis.pdf
+ES_SONY_2Check.docx
+ES_SONY_Check.docx
+FEI_CITY_190114104620.csv
+FileZilla_3.33.0_macosx-x86_setup_bundled.dmg
+FullSizeRender.jpg
+Gyazo-3.6.0.dmg
+H29_yoyakushoken.xls
+H29修士中間発表会フ゜ロク゛ラム20170606.pdf
+H30募集要項.pdf
+H30美しい国土づくりへの挑戦II.pdf
+H30インターンシップ説明会プログラム.pdf
+Hikosaka_201720723_Android.pdf
+Hikosaka_201720723_final.pdf
+IMG_0554.JPG
+IMG_0905.PNG
+IMG_1008.JPG
+IMG_1009.JPG
+IMG_1010.JPG
+IMG_1306.jpg
+IMG_1307.jpg
+IMG_2898-2-2.mov
+IMG_2982.JPG
+IMG_3051.PNG
+IMG_5159.JPG
+IMG_5183.JPG
+IMG_5184.JPG
+IMG_5246.JPG
+IMG_9203.JPG
+IPSJ-CG88033001.pdf
+IPSJ-JNL4103016.pdf
+IPSJ-JNL4206033.pdf
+Icebreak2018.pdf
+JAPIC科目掲示.pdf
+JSCPB180824_IA.docx
+KDDI-poster(20190218).pdf
+KJ00005254825.pdf
+KJ00007288801.pdf
+KWJcW4m.jpg
+Kobayashi3.pdf
+LINEマンカ?【七海の悩み】修正版_150701.pdf
+MAST20180207卒研発表プログラム.pdf
+MAST_ACSRG.pdf
+MathWorks
+Mistral-kestrel5000series-Manual.pdf
+NOLTA182025.pdf
+OTNinstructionJP.pdf.pdf
+OpenJDK8U-jdk_x64_mac_hotspot_8u212b03.pkg
+QAreport-201820616-TatsukiIchinose.pdf
+QAreport-201820619-Uehara Minami.pdf
+QAreport-201820623-YuriEisaki-2.pdf
+QAreport-201820623-YuriEisaki-3.pdf
+QAreport-201820623-YuriEisaki-5.pdf
+QAreport-201820623-YuriEisaki.pdf
+QAreport-201820624-TakuyaEdamatsu.pdf
+QR_Code1505199664.png
+R-3.3.3.pkg
+R-3.5.1.pkg
+RS2009_KenichiroNagasaka.pdf
+RepAnswerSheet2019.pdf
+Report_03.pdf
+Report_04.pdf
+Report_05.pdf
+Report_06.pdf
+SEN0114_SPL.jpg
+SEN0114_sml.JPG
+SICE_ihikosaka_20190316.pdf
+SICE_ihikosaka_Ver20190305.pdf
+Screenshot_20180517-165056.png
+Screenshot_20180517-171256.png
+Slack-3.3.3.dmg
+Student-led seminar groups - 2019s.docx
+The-output-of-LEM-on-1600-points-sampled-from-a-swissroll-is-presented-in-A1-The-output.png
+Unknown
+Unknown-2
+WEB-CARTOP_1-1-680x453.jpg
+ZenApps_201820623.pptx
+android-studio-ide-173.4670197-mac.dmg
+angle.eps
+aoyagireisyosimo_otf_2_01
+aoyagireisyosimo_ttf_2_01
+benmachi.pptx
+cbf6v-te0nk.eps
+cbsyw-137hr.eps
+cc72253647bb635395977f6ab052c00c.png
+checkerTimeTable_20190604kamo.xlsx
+computer_message_app.png
+d8d06a7bd28a076f4a36ef922e67ad33_t.jpeg
+data_analysis_suzuki_1.pdf
+data_analysis_suzuki_2.pdf
+data_analysis_suzuki_3_1.pdf
+data_analysis_suzuki_4.pdf
+eisaki.eps
+es-2.pdf
+es-3.pdf
+es.pdf
+esheet_SIE_seisaku.pdf
+ffmpeg-4.1.3
+ffmpeg-4.1.3.tar.bz2
+flores-bonitas-no-vaso-de-vidro-ramalhete-bonito-do-encanto-coral-das-peônias-meio-composição-floral-luz-dia-wallpaper-115970499.jpg
+flower-pot-wallpaper3.jpg
+g055_2.html
+gardeningCM2.mp4
+git-boot-camp-20181130-work1-master
+graduation_thesis
+guid_g2018.pdf
+gyo0020-024.jpg
+h30_1menjyo_ni1.xlsx
+haguruma.png
+hd-webcam-c615-gallery.png
+hitachi190124poster.pdf
+hitachi_intro.pptx
+ieice.dot
+ieice_abstruct_yeisaki_ver2.docx
+ieice_resume_yeisaki_ver2.pdf
+ieiceguide_e.pdf
+ihikosaka_Master_final_fixed.pdf
+image1.PNG
+images.png
+img_24.jpeg
+internship_form.doc
+jre-8u171-macosx-x64.dmg
+jre-8u191-macosx-x64.dmg
+jre-8u191-windows-i586-iftw.exe
+jscpb40_presentation_yeisaki.pdf
+k53_kishimoto_honbun.pdf
+kabu_chart_woman.png
+kafun_sukkiri.png
+karate
+kiseki.jpg
+ko0566.pdf
+ko0566.pdf.download
+kougi0203.ppt
+lap.c
+lecture.1.9up.pdf
+lecture.1.pdf
+lifesupport1996_18_3_121_ja.bib
+lorenz.jar
+mast_sotsuken_program_2017.pdf
+master-thesis.pdf
+master_thesis-1.pdf
+master_thesis-2.pdf
+master_thesis-3.pdf
+master_thesis.pdf
+matlab_R2017a_maci64-2.dmg
+matlab_R2017a_maci64.dmg
+matlab_R2019a_maci64.dmg
+mbuj2han_s1820623.pdf
+memo1.pdf
+memo2.pdf
+memo3.pdf
+memo4.pdf
+memo5-2.pdf
+memo5.pdf
+message2.delivery-status
+mhori_181026.pdf
+mitsubishi.seminar_tsukuba.pdf
+multicol004.tex
+mydigitalcalendar.safariextz
+natsuironocampus.mp3
+nature03647.ris
+nolta2018.doc
+o0505029114165103587.jpg
+pacific-rim-1.jpg
+paper.pdf
+pdf.pdf
+pepper.pptx
+plaintext_articles
+prezen_ZEN_flyer.pdf
+prob2019FinalRep.pdf
+r-tips-2.pdf
+r-tips-3.pdf
+r-tips-4.pdf
+r-tips.pdf
+raspberry-pi-logo.jpg
+rengo_Hikosaka_Ver4.pdf
+report-201720671-MasakiEbata-201720661-KoheiIto.pdf
+report-201720678-SotaKawakami-201720666-TaikiIwamoto.pdf
+report-201720715-RyotaNamba-201820671-NakoTsuda.pdf
+report-201720733-KenMizusawa-201820619-MinamiUehara.pdf
+report_week1.docx
+report_week2.pdf
+report_week3_201820623.pdf
+resume-201720652-YasuhiroAnzai.pdf
+resume-201720685-KentKoide.pdf
+resume-201720748-MasahiroWatanabe.pdf
+resume-201820607-TatsuakiAkahane.pdf
+resume-201820612-HiroyoshiIshii.pdf
+resume-201820614-JunkiIshikawa.pdf
+resume-201820615-ToshiyaIsomoto.pdf
+resume-201820619-Minami Uehara.pdf
+resume-201820626-DaikiOguri.pdf
+resume-201820628-RyosukeKaneko.pdf
+resume-201820635-SoheiKinugawa.pdf
+resume-201820645-AkinariSakai.pdf
+resume-201820651-KazumaSawada.pdf
+resume-201820652-KeishiSando.pdf
+resume-201820658-YusukeSuzuki.pdf
+resume-201820721-Wangzhaoyu.pdf
+resume-201820724-HOUZHUO.pdf
+resume-201820741-YangYian.pdf
+resume-201820746-FilipeBittencourtSouzaDasNeves.pdf
+resume-201820749-KatiaBourahmoune.pdf
+resume-201820751-LIU FEI.pdf
+riron.pdf
+rpic2018
+shiharai-Y1810T06149.pdf
+simkekka1.jpg
+smartphone_app.png
+sokudo.jpg
+sokudo1.jpg
+spex73.pdf
+stakita_20190130.pptx
+sugoishinka.pdf
+tandf_tbsd2036_1255.ris
+texieiceguide.pdf
+texsample.lzh
+texstudio-2.12.14-osx.dmg
+tmizui_0212.pptx
+tmizui_20181019.pptx
+tmizui_20181130.pptx
+tmizui_b4research_slides.pptx
+tra-2.png
+tra-min.png
+tra.png
+untitled.jpg
+untitled1.jpg
+url-2.html
+url.html
+vlc-3.0.6.dmg
+wikispeedia_articles_plaintext.tar
+wikispeedia_paths-and-graph
+wikispeedia_paths-and-graph 2
+wikispeedia_paths-and-graph.tar
+writing_paper_checklist.pdf
+yzhou.pdf
+zazen_man.png
+~$reement_v3.docx
+【01ZZ607】High Performance Parallel Computing Technology for Computational Sciences-2.pdf
+【01ZZ619】宇宙の歴史　1025.pdf
+【01ZZ622】「考える」動物としての人間_.pdf
+【01ZZ751】ヨーガコース.pdf
+第1回ソフトウェア最適化論_2018stu.pdf
+第6回並列化プログラミング_2018.pdf
+成績
+掲示01CN402モビリティ・ロボティクス・知能化技術と地域未来創生(修正版）.pdf
+掲示01CN955サービス工学特別講義Ⅲ.pdf
+【〆切 9=18】研究室紹介 原稿執筆のお願い.eml
+承諾書_201820623.pdf
+中西様_201820623_永崎佑里.docx
+借用書enPiT事務局【組込プログラム開発用】_2018.doc
+提出書類
+セブ島 ポスター.pdf
+追加資料.pdf
+軌跡画像.png
+つくば2018-p.pdf
+若手の会_yeisaki_ver1_IA.docx
+ここまで.docx
+発表の流れ.pptx
+玉手箱解答.xls
+発表の流れ12～14＋19.pptx
+筑波大学　2018年 CC　(配布用）.pptx
+筑波大学　2018年 CC　(配布用）.pptx.download
+学生用掲示2：集中講義実施日決定 ダイバーシティ（秋保）.pdf
+発表資料α_1.2_p11.18修正.pptx
+発表資料α_1.2_p11修正.pptx
+発表の流れp15-p18.pptx
+発表資料最終.pptx
+就活準備講座10月4日.pdf
+英語輪講資料Mizui Tatsuki 10th.pdf
+玉手箱回答集ver2.xlsx
+研究紹介シート.pdf
+筑波シラバス_2018u.pdf
+創成卒研発表会_program_v20170127.pdf
+サンプル版（vol33-no1）.pdf
+都市交通のあり方(中西)2018【配布用】.pdf
+発表資料　最終稿.pdf
+（筑波大学講義）180704_国際競争力維持のための我が国の港湾戦略_4up.pdf
+コンテンツ応用論2018_受講調整結果.pdf
+出張依頼兼承諾書_stakita.doc
+出張依頼兼承諾書_yeisaki.doc
+エントリーシート_永崎佑里（筑波大学）.docx
+無題のメッセージ
+スクリーンショット 2018-04-16 10.22.22.pdf
+無題のメッセージ-2
+【帳票】来場者ｶｰﾄﾞ.doc
+論文投稿に際しての注意.pdf
+建物・市街地防災対策（180530配布用）.pdf
+ウェルシア店舗調査所感_永崎.pptx
+インターンシップ報告書.doc
+インターンシップ報告書.doc.zip
+（帳票）交通費振込依頼書.pdf
+インターンシップ報告書_201820623.pdf
+デンソー東京支社入館方法.pdf
+河辺先生、合原先生へむけて.pdf
+薬物のない学生生活のために.pdf
+都市・地域づくり（藤岡）2018.pdf
+美しい国土づくりへの挑戦2018final.pdf
+【授業用】ダイバーシティII ポスター.pdf
+学生用掲示：集中講義実施日決定 ダイバーシティ２.pdf
+インターンシップ【学生提出書類】
+デンソー東京支社入館バーコード1211.pdf
+サービスとデータプライバシー2018追跡技術の進化とプライバシー.pdf
+海外渡航・滞在に関する注意喚起について(学生配付用）.docx
+インターンシップ第１回ヒアリング日程20180810.pdf
+インターンシップ第１回ヒアリング日程20180908.pdf
+インターンシップ第１回ヒアリング日程20180930.pdf
+インターンシップ第１回ヒアリング日程20181022.pdf
+コンピューティング環境使用時の注意事項.pdf
+地球環境への対応持続可能な都市の実現に向けて（小川）2018.pdf
+YURI-no-MacBook-Air:Downloads yeisaki$ cd git-boot-camp-20181130-work1-master
+YURI-no-MacBook-Air:git-boot-camp-20181130-work1-master yeisaki$ ls
+LICENSE		index.html
+YURI-no-MacBook-Air:git-boot-camp-20181130-work1-master yeisaki$ git init
+Initialized empty Git repository in /Users/yeisaki/Downloads/git-boot-camp-20181130-work1-master/.git/
+YURI-no-MacBook-Air:git-boot-camp-20181130-work1-master yeisaki$ git remote add orgin https://github.com/Yuri9512/enpit_practice.git
+YURI-no-MacBook-Air:git-boot-camp-20181130-work1-master yeisaki$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'origin'
+YURI-no-MacBook-Air:git-boot-camp-20181130-work1-master yeisaki$ cd ..
+YURI-no-MacBook-Air:.Trash yeisaki$ cd ..
+YURI-no-MacBook-Air:~ yeisaki$ cd desktop
+YURI-no-MacBook-Air:desktop yeisaki$ mkdir enpit
+YURI-no-MacBook-Air:desktop yeisaki$ git clone https://github.com/Yuri9512/enpit_practice.git
+Cloning into 'enpit_practice'...
+remote: Enumerating objects: 17, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 17 (delta 0), reused 17 (delta 0), pack-reused 0
+Unpacking objects: 100% (17/17), done.
+YURI-no-MacBook-Air:desktop yeisaki$ cd enpit
+YURI-no-MacBook-Air:enpit yeisaki$ git clone https://github.com/Yuri9512/enpit_practice.git
+Cloning into 'enpit_practice'...
+remote: Enumerating objects: 17, done.
+remote: Counting objects: 100% (17/17), done.
+remote: Compressing objects: 100% (15/15), done.
+remote: Total 17 (delta 0), reused 17 (delta 0), pack-reused 0
+Unpacking objects: 100% (17/17), done.
+YURI-no-MacBook-Air:enpit yeisaki$ ls
+enpit_practice
+YURI-no-MacBook-Air:enpit yeisaki$ cd enpit_practice
+YURI-no-MacBook-Air:enpit_practice yeisaki$ git fetch
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (1/1), done.
+remote: Total 3 (delta 2), reused 3 (delta 2), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/Yuri9512/enpit_practice
+ * [new branch]      test       -> origin/test
+YURI-no-MacBook-Air:enpit_practice yeisaki$ git checkout test
+Branch 'test' set up to track remote branch 'test' from 'origin'.
+Switched to a new branch 'test'
+YURI-no-MacBook-Air:enpit_practice yeisaki$ git checkout -b test2
+M	index.html
+Switched to a new branch 'test2'
+YURI-no-MacBook-Air:enpit_practice yeisaki$ ls
+LICENSE		index.html
+YURI-no-MacBook-Air:enpit_practice yeisaki$ open index.html
+YURI-no-MacBook-Air:enpit_practice yeisaki$ open -e index.html
+YURI-no-MacBook-Air:enpit_practice yeisaki$ emacs index.html
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,8 +563,8 @@
             if(isNaN(e1)){
                 return 'UnSupport'
             }
-            // var f1 = parseFloat(e1)
-            const f1 = Math.abs(parseFloat(e1));
+             var f1 = parseFloat(e1)
+
             const f2 = parseFloat(e2);
             switch (op) {
                 case 'plus':
@@ -48,41 +593,5 @@
                 return Math.floor(value)
             }
             if(decimalPoint === 'round'){
-                // return Math.round(value)
-                return Math.floor(value)
-            }
-            return value
-        }
-        function disableSecond(){
-            const op = document.getElementById('operator').value;
-            // if(op === 'sqrt' || op === 'square'){
-            if(op === 'square'){
-                document.getElementById('second').disabled = true
-            }
-            else{
-                document.getElementById('second').disabled = false
-            }
-        }
-    </script>
-</head>
-<body>
-<label for="first"></label><input type="text" id="first">
-<label for="operator"></label><select id="operator" onchange="disableSecond()">
-    <option id="plus" value="plus">+</option>
-    <option id="minus" value="minus">-</option>
-    <option id="multiply" value="multiply">×</option>
-    <option id="mod" value="mod">÷</option>
-    <option id="sqrt" value="sqrt">√</option>
-    <option id="square" value="square">x²</option>
-</select>
-<label for="second"></label><input type="text" id="second">
-<input type="button" id="execute" value="=" onclick="f()">
-<label for="result"></label><input type="text" id="result">
-<label for="decimalPoint"></label><select id="decimalPoint">
-    <option id="raw" value="raw">小数点以下そのまま</option>
-    <option id="floor" value="floor">小数点以下切り捨て</option>
-    <option id="ceil" value="ceil">小数点以下切り上げ</option>
-    <option id="rout" value="round">小数点以下四捨五入</option>
-</select>
-</body>
-</html>
+-uuu:**-F1  index.html      1% L21    (HTML)----------------------------------------------------------------------
+
